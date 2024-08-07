@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-food Delivery</title>
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            background-color: rgb(188, 205, 219);
+            margin: 0 ;
+            padding: 0 ;
+        }
+        .header{
+            height: 50px;
+            align-items: center;
+            display: grid;
+            text-align: left;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .container{
+            width: 80%; 
+            max-width: 750px;
+            margin: 10px auto;
+            padding: 20px;
+            background-color: #b2f2e5;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"]
+        input[type="checkbox"]
+        input[type="radio"]
+        select {
+            width: 95%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        } button {
+            background-color: #0484c9;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        button:hover {
+            background-color: #9ccaea;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>E-Food Delivery Feedback Form</h1>
+        <div class="container">
+            <p>Thank you for choosing our delivery service! 
+            We had love to hear about your experience to help us improve.
+            Please take a few moments to complete this feedback form.</p>
+            <h2> Order Details:</h2>
+            <label for="ON">Order Number</label>
+            <input type="text" name="ON" id="ON" required><br> <br>
+            <label for="Dod">Date of Delivery</label>
+            <input type="text" name="Dod" id="Dod" required>
+            <h2> Delivery Experience:</h2>
+            <label for="DE">Was your order delivered on time?</label> <br>
+            <input type="radio" name="DE" id="DE" required> YES <br>
+            <input type="radio" name="DE" id="DE" required> NO
+            <h2> Food Quality:</h2>
+            How would you rate the quality of the food? <br>
+            <label for="Q_food"></label>
+            <input type="checkbox" name="Q_food" id="Q_food"> Excellent <br>
+            <input type="checkbox" name="Q_food" id="Q_food"> Good <br>
+            <input type="checkbox" name="Q_food" id="Q_food"> Average <br>
+            <input type="checkbox" name="Q_food" id="Q_food"> Poor <br> <br>
+            Were the food items hot and properly prepared upon arrival? <br>
+            <label for="hp"></label>
+            <input type="checkbox" name="hp" id="hp"> YES <br>
+            <input type="checkbox" name="hp" id="hp"> NO <br> <br>
+            <label for="no"> If no, please describe the issue:</label>
+            <input type="text" name="no" id="no">
+            <h2>Packaging:</h2>
+            Was the food packaged securely and appropriately? <br> 
+            <label for="pack"></label>
+            <input type="checkbox" name="pack" id="pack"> YES <br>
+            <input type="checkbox" name="pack" id="pack"> NO <br> 
+            <label for="no"> If no, please describe the issue:</label>
+            <input type="text" name="no" id="no">
+            <h2>Ordering Process:</h2>
+            How easy was it to place your order online? <br>
+            <label for="OP"></label>
+            <input type="checkbox" name="OP" id="OP"> Very Easy <br>
+            <input type="checkbox" name="OP" id="OP"> Easy <br>
+            <input type="checkbox" name="OP" id="OP"> Neutral <br>
+            <input type="checkbox" name="OP" id="OP"> Difficult <br>
+            <input type="checkbox" name="OP" id="OP"> Very Difficult <br> <br>
+            Thank you for your feedback! Your input helps us to continually improve our service. <br><br>
+            <fieldset>
+                <legend>Submit</legend>
+                <button type="submit">Submit</button>
+                <button type="reset">Cancel</button>
+            </fieldset>
+        </div>
+    </div>
+</body>
+</html>

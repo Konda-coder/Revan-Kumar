@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Registration </title>
+    <style>
+        body{
+            background-color:#f7f4f4;
+            font-size: large;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0;
+            padding: 0; 
+        }
+        form{
+            display: grid;
+        }
+        fieldset {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            background-color: #f4d4b0;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        input[type="text"],
+            input[type="email"],
+            input[type="password"],
+            input[type="url"],
+            select 
+            {
+                width: 95%;
+                padding: 8px;
+                margin-bottom: 10px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+            }
+        .header
+        {
+            height: 50px;
+            display: flex;
+            align-items: center;
+        }
+        .container
+        {
+            width: 80%;
+            max-width: 850px;
+            margin: 10px auto;
+            padding: 20px;
+            background-color:#99e8ee;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        button
+        {
+            background-color: #0077b5;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor:pointer;
+            margin-right: 15px;
+        }
+    </style>
+</head>
+<body >
+    <div class="container">
+        <h1>College Registration Form</h1>
+        <fieldset>
+            <legend><b>Personal Details </b></legend>
+            <label for="Name">Name:-</label><br>
+            <input type="text" name="Name" id="Name"><br>
+            <label for="lastname">lastname:-</label><br>
+            <input type="text" name="lastname" id="lastname"><br>
+            <label for="img" >Image</label><br>
+            <input type="file" id="img" accept=".jpg" required><br>
+            <label for="doc">Doc :-</label><br>
+            <input type="date" name="doc" id="doc"><br>
+            <label for="gender">Gender: <br>
+            <input type="radio" value="gender">Male <br>
+            <input type="radio" value="gender">Female <br>
+            <input type="radio" value="gender">Others <br>
+            </label>
+            <label for="">Religion</label><br>
+            <select name="region" id="region"><br>
+                <option value="">caste</option>
+                <option value="">OC  </option>
+                <option value="">BC  </option>
+                <option value="">SC  </option>
+                <option value="">ST  </option>
+                <Option value="">Others   </Option>
+            </select><br>             
+            <label for="fname">Father Name:-</label><br>
+            <input type="text" name="Fname" id="fname"><br>
+            <label for="mname">Mother Name:-</label><br>
+            <input type="text" name="mname" id="mname"><br>
+            <label for="email">Presional Email id:-</label><br>
+            <input type="email" name="email" id="email"><br>
+            <label for="number">Mobile Number:-</label><br>
+            <input type="number" name="number" id="number"><br>
+            <label for="number">Parents Number:-</label><br>
+            <input type="number" name="number" id="number"><br>
+            <label for="number">AAdhar Card:-</label><br>
+            <input type="number" name="number" id="number"><br>
+            <label for="address">Address</label><br>
+            <textarea cols="50" rows="15" value="address">address
+            </textarea><br><br>
+        </fieldset><br>
+        <fieldset>
+                <legend><b>10th & 12th Details</b></legend><br>
+                <h1>10th</h1>
+                <label for="number">10th Total Marks</label><br>
+                <input type="number" name="number" id="number"><br>
+                <label for="perc"> Percentage:-</label><br>
+                <input type="number" name="number"><br>
+                <label for="text">Marks In Words:-</label><br>
+                <input type="text" name="text" id="text"><br>
+                <h1>12th</h1>
+                <label for="number">12th Total Marks</label><br>
+                <input type="number" name="number" id="number"><br>
+                <label for="perc"> Percentage:-</label><br>
+                <input type="number" name="number"><br>
+                <label for="text">Marks In Words:-</label><br>
+                <input type="text" name="text" id="text"><br>
+        </fieldset><br>
+        <fieldset>
+                <legend><b>Graduation</b></legend><br>
+                <label for="Btech">Choose a Department:</label>
+                <select id="Btech">
+                    <option value="Choose">Choose</option>
+                    <option value="Cse">Cse</option>
+                    <option value="CsD">CsD</option>
+                    <option value="CsAi">CsAi</option>
+                    <option value="Ece">Ece</option>
+                    <option value="Eee">Eee</option>
+                </select><br>
+                <br>
+                <label for="">Courses:</label><br>
+                <input type="radio" id="c" name="dept">
+                <label for="c">C</label>
+                <input type="radio" name="dept" id="C++">
+                <label for="C++">C++</label>
+                <input type="radio" id="python" name="dept">
+                <label for="python">PYTHON</label>
+                <input type="radio" name="dept" id="java">
+                <label for="java">JAVA</label>
+                <br><br>
+        </fieldset><br>
+        <fieldset>
+                <label for="">Submit</label><br>
+                <button type="Submit">Sign up</button>
+                <button type="reset">Reset</button>
+
+        </fieldset>
+    </div>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>linkedin Form</title>
+    <style>
+            body{
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background: var(--color-canvas);
+            }
+            .header{
+                height: 50px;
+                display: flex;
+                align-items: center;
+            }
+    
+            .container{
+                width: 80%;
+                max-width: 600px;
+                margin: 10px auto;
+                padding: 20px;
+                background-color: #fff;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            }
+            h1 {
+                text-align: center;
+                color: #333;
+                margin-bottom: 10px;
+            }
+    
+            p {
+                text-align: center;
+                color: #666;
+                margin-bottom: 20px;
+            }
+            form{
+                display: grid;
+            }
+            fieldset {
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                padding: 15px;
+                background-color: #fafafa;
+            }
+            input[type="text"],
+            input[type="email"],
+            input[type="password"],
+            input[type="url"],
+            select {
+                width: 95%;
+                padding: 8px;
+                margin-bottom: 10px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+            }
+            button {
+                background-color: #0077b5;
+                color: #fff;
+                border: none;
+                padding: 10px 15px;
+                border-radius: 4px;
+                cursor: pointer;
+                margin-right: 10px;
+            }
+    
+            button:hover {
+                background-color: #005582;
+            }
+    </style>
+</head>
+<body> 
+    <div class="container">
+        <h1>LinkedIn Form</h1>
+        <fieldset>
+            <legend>Personal details</legend>
+            <label for="fname"> First Name</label>
+            <input type="text" name="fname" id="fname"> <br>    
+            <label for="lname"> Last Name</label>
+            <input type="text" name="lname" id="lname"><br>
+            <label for="user"> Email</label>
+            <input type="email" name="user" id="user"><br>
+            <label for="pwd"> Create a password:</label>
+            <input type="password" name="pwd" id="pwd"><br>
+            <label for="loc"> Location</label>
+            <input type="text" name="loc" id="loc"><br>
+            <label for="city"> City</label>
+            <input type="text" name="city" id="city"><br>
+        </fieldset>
+        <fieldset>
+            <legend>professional</legend>
+            <label for="headline">Headline:</label>
+            <input type="text" name="headline" id="headline" placeholder="eg.. Software engineer at xyzz" required> <br>
+            <label for="cjt">Current Job Title</label>
+            <input type="text" name="cjt" id="cjt" required><br>
+            <label for="co">Company/Organization</label>
+            <input type="text" name="co" id="co" required><br>
+            <label for="in">Institution</label>
+            <input type="text" name="in" id="in" required><br>
+            <label for="industry">Industry</label>
+            <select name="industry" id="industry" required>
+                <option value="Technology">Technology</option>
+                <option value="finance">Finance</option>
+                <option value="marketing">Marketing</option>
+                <option value="education">Education</option>
+            </select> <br>
+        <fieldset> 
+            <legend>privacy setting</legend>
+                <label for="terms">
+                <input type="checkbox" name="terms" id="terms" required>
+                 I agree to the LinkedIn <a href="#">Terms of Service </a> and <a href="#">Privacy Policy </a>
+                </label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Submit</legend>
+            <button type="submit">Sign up</button>
+            <button type="reset">Reset</button>
+        </fieldset>
+
+
+    </div>
+</body>
+</html>
